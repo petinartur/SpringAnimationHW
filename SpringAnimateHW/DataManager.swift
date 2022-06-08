@@ -5,38 +5,39 @@
 //  Created by Артур Петин on 02.06.2022.
 //
 
-import Foundation
+import Spring
 
 class DataManager {
     
     static let shared = DataManager()
     
-    let animations = ["shake",
-                      "pop",
-                      "morph",
-                      "squeeze",
-                      "wobble",
-                      "swing",
-                      "flipX",
-                      "flipY",
-                      "fall",
-                      "squeezeLeft",
-                      "squeezeRight",
-                      "squeezeDown",
-                      "squeezeUp",
-                      "slideLeft",
-                      "slideRight",
-                      "slideDown",
-                      "slideUp",
-                      "fadeIn",
-                      "fadeOut",
-                      "fadeInLeft",
-                      "fadeInRight",
-                      "fadeInDown",
-                      "fadeInUp",
-                      "zoomIn",
-                      "zoomOut",
-                      "flash"]
+    let animations: [Spring.AnimationPreset] = [
+        .Shake,
+        .Pop,
+        .Morph,
+        .Squeeze,
+        .Wobble,
+        .Swing,
+        .FlipX,
+        .FlipY,
+        .Fall,
+        .SqueezeLeft,
+        .SqueezeRight,
+        .SqueezeDown,
+        .SqueezeUp,
+        .SlideLeft,
+        .SlideRight,
+        .SlideDown,
+        .SlideUp,
+        .FadeIn,
+        .FadeIn,
+        .FadeInLeft,
+        .FadeInRight,
+        .FadeInDown,
+        .FadeInUp,
+        .ZoomIn,
+        .ZoomOut,
+        .Flash]
     
     private init() {}
 }

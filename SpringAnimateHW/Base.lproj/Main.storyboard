@@ -70,7 +70,6 @@
                     <connections>
                         <outlet property="animateLabel" destination="Gak-6s-jiP" id="YMU-oR-JQN"/>
                         <outlet property="animateView" destination="k8H-4b-fNO" id="nGv-m3-XEm"/>
-                        <outlet property="runButton" destination="PWe-Dh-oYO" id="Zr0-la-ibV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

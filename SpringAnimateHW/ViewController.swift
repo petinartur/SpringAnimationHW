@@ -8,33 +8,27 @@
 import Spring
 
 class ViewController: UIViewController {
-    var animate = DataManager.shared.animations.randomElement()
     
     @IBOutlet var animateView: SpringView!
     @IBOutlet var animateLabel: UILabel!
-    @IBOutlet var runButton: SpringButton!
+    
+    private var animation = Animation.getRandomAnimation()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        runButton.setTitle("Run \(animate ?? "morph")", for: .normal)
+        animateLabel.text = animation.description
     }
     
     
-    @IBAction func runAnimate(_ sender: Any) {
-        animateView.animation = animate ?? "morph"
-        animateView.force = CGFloat(Int.random(in: 1...2))
-        animateView.duration = CGFloat(Int.random(in: 1...2))
+    @IBAction func runAnimate(_ sender: UIButton) {
+        animateLabel.text = animation.description
+        animateView.animation = animation.name
+        animateView.force = CGFloat(animation.force)
+        animateView.duration = CGFloat(animation.duration)
         animateView.animate()
-        
-        
-        animateLabel.text = """
-Анимация: \(animateView.animation),
-Сила: \(animateView.force),
-продолжительность: \(animateView.duration)
-"""
-        animate = DataManager.shared.animations.randomElement()
-        runButton.titleLabel?.updateConstraints()
-        runButton.setTitle("Run \(animate ?? "morph")", for: .normal)
+    
+        animation = Animation.getRandomAnimation()
+        sender.setTitle("Run \(animation.name)", for: .normal)
     }
     
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		750274E3284F819700CC0F09 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750274E2284F819700CC0F09 /* Animation.swift */; };
 		750C2D5C2848DAD300E0C798 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750C2D5B2848DAD300E0C798 /* AppDelegate.swift */; };
 		750C2D5E2848DAD300E0C798 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750C2D5D2848DAD300E0C798 /* SceneDelegate.swift */; };
 		750C2D602848DAD300E0C798 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 750C2D5F2848DAD300E0C798 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		750274E2284F819700CC0F09 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
 		750C2D582848DAD300E0C798 /* SpringAnimateHW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpringAnimateHW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		750C2D5B2848DAD300E0C798 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		750C2D5D2848DAD300E0C798 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				750C2D5B2848DAD300E0C798 /* AppDelegate.swift */,
 				750C2D5D2848DAD300E0C798 /* SceneDelegate.swift */,
 				750C2D5F2848DAD300E0C798 /* ViewController.swift */,
+				750274E2284F819700CC0F09 /* Animation.swift */,
 				750C2D6F2848E3C800E0C798 /* DataManager.swift */,
 				750C2D612848DAD300E0C798 /* Main.storyboard */,
 				750C2D642848DAD500E0C798 /* Assets.xcassets */,
@@ -212,6 +215,7 @@
 				750C2D602848DAD300E0C798 /* ViewController.swift in Sources */,
 				750C2D702848E3C800E0C798 /* DataManager.swift in Sources */,
 				750C2D5C2848DAD300E0C798 /* AppDelegate.swift in Sources */,
+				750274E3284F819700CC0F09 /* Animation.swift in Sources */,
 				750C2D5E2848DAD300E0C798 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
